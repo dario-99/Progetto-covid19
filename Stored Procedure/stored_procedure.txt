@@ -1,0 +1,62 @@
+CREATE OR REPLACE PROCEDURE conta_contagiati_per_regione(regione IN COVID.denominazione_regione%TYPE, giorno IN COVID.data%type)
+AS
+BEGIN
+    DECLARE
+        numero_contagiati COVID.totale_casi%TYPE;
+        regione_errata EXCEPTION;
+        contatore integer;
+    BEGIN
+        select count(*) INTO contatore
+        from covid
+        where denominazione_regione = regione;
+        IF contatore = 0 THEN
+            RAISE regione_errata;
+        ELSE
+            select SUM(totale_casi) INTO numero_contagiati
+            from covid
+            where denominazione_regione = regione AND data = giorno
+            group by denominazione_regione;
+            DBMS_OUTPUT.PUT_LINE('Numero Contagiati in '|| regione || ' al giorno '|| giorno || ': ' || numero_contagiati);
+        END IF;
+    EXCEPTION
+        WHEN regione_errata THEN
+            DBMS_OUTPUT.PUT_LINE('Regione non presente!');
+    END;
+END conta_contagiati_per_regione;
+
+
+
+CREATE OR REPLACE PROCEDURE conta_contagiati_per_provincia_regione(regione IN COVID.denominazione_regione%TYPE, giorno IN COVID.data%type)
+AS
+BEGIN
+    DECLARE
+        regione_errata EXCEPTION;
+        contatore integer;
+        provincia covid.denominazione_provincia%TYPE;
+        numero_contagiati_provincia COVID.totale_casi%TYPE;
+        CURSOR cursore_provincia IS
+            select denominazione_provincia, totale_casi
+            from covid
+            where denominazione_regione = regione AND data = giorno AND denominazione_provincia <> 'In fase di definizione/aggiornamento';
+    BEGIN
+        select count(*) INTO contatore
+        from covid
+        where denominazione_regione = regione;
+        IF contatore = 0 THEN
+            RAISE regione_errata;
+        ELSE
+            OPEN cursore_provincia;
+            DBMS_OUTPUT.PUT_LINE('Elneco provincie per la regione '|| regione || ': ');
+            LOOP
+                FETCH cursore_provincia INTO provincia, numero_contagiati_provincia;
+                EXIT WHEN cursore_provincia%NOTFOUND;
+                    DBMS_OUTPUT.PUT_LINE(provincia || ': ' || numero_contagiati_provincia);
+                EXIT WHEN cursore_provincia%NOTFOUND;
+            END LOOP;
+            CLOSE cursore_provincia;
+        END IF;
+    EXCEPTION
+        WHEN regione_errata THEN
+            DBMS_OUTPUT.PUT_LINE('Regione non presente!');
+    END;
+END conta_contagiati_per_provincia_regione;
