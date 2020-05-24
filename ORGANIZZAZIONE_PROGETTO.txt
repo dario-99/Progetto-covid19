@@ -34,4 +34,8 @@ Il progetto si suddivide in:
 			-...
 	9) Stored Procedure e Trigger
 	10) Viste e indici
+	11) DOCUMENTAZIONE su Word
+NOTA:
+Contemporaneamente a questi lavori dobbiamo documentare il nostro operato in modo da rendere molto facile creare la DOCUMENTAZIONE,
+e inoltre rendere piu facile capire i codici e il nostro intento per una comunicazione migliore tra di noi.
 		
