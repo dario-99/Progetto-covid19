@@ -27,7 +27,7 @@ Il progetto si suddivide in:
 	8) GRAFICA
 		<qui dobbiamo mostrare i dati raccolti dalle query attraverso dei software come excel
 		o ad esempio creare un WEB APP, aspetto tue notizie per una scelta>
-		POSSIBILIA:
+		POSSIBILITA:
 			-Excel
 			-Web APP
 			-Pygame
