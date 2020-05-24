@@ -1,0 +1,34 @@
+------------------------------------------------------
+https://github.com/pcm-dpc/COVID-19
+
+Dati Italiani su tutte le regioni e province
+------------------------------------------------------
+http://www.healthdata.org/covid/data-downloads
+
+Dati di tutte le nazioni e regioni del mondo organizzate per numero di posti letto, 
+anche di terapia intensiva e anche dati statistici su previsioni
+------------------------------------------------------
+https://www.worldometers.info/coronavirus/about/#sources
+https://www.worldometers.info/coronavirus/country/italy/
+
+Siti che mostrano in modo visivo i dati, possiamo prendere spunto per la parte grafica
+------------------------------------------------------
+https://www.tuttitalia.it/province/densita/
+
+Denista abitativa delle regioni italiane
+------------------------------------------------------
+http://www.healthdata.org/italy
+https://www.dati.gov.it/
+http://dati.istat.it/
+
+Dati generici sull'italia, con cui potremmo fare delle relazioni
+------------------------------------------------------
+http://dati.istat.it/Index.aspx?DataSetCode=DCCV_TAXDISOCCUMENS1
+
+Dati sul tasso di dissoccupazione in italia per regioni
+------------------------------------------------------
+https://github.com/CSSEGISandData/COVID-19
+https://ourworldindata.org/coronavirus-source-data
+
+Dati un po su tutte le nazioni
+------------------------------------------------------
