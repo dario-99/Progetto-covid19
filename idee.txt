@@ -11,5 +11,3 @@ sql:
 	-query particolari
 -ricerche su google
 -traffico rete
--ENELX
--dataisbeatiful

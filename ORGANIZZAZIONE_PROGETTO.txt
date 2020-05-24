@@ -1,0 +1,37 @@
+Qui suddivido il progetto in piccoli problemi da risolvere passo passo, quindi l'organizzazione delle fasi del progetto.
+Il progetto si suddivide in:
+
+	1) Raccolta Dati
+	2) Pulizia dei dati
+		- Delete delle righe non significative
+		- Rendere in formato leggibile le date ad es (GG-mese-AAAA)
+			* mese: tre iniziali del mese in inglese per oracle
+		- selezione del periodo 25/02 fino al 3/05
+	3) Creazione Master table
+		- che DBMS vogliamo usare?
+		- possiamo usare la tabella creata dal prof su teams
+		- popoliamo la tabella con i dati base sulle provincie italiane
+	4) Verifica delle 3NF e scomposizione in tabelle
+		- Freghiamo la roba fatta dal prof
+	5) Arricchimento dei dati trovati
+		<qui possiamo aggiungere i dati che abbiamo trovato tramite degli alter table ad es>
+		- Densita abitativa
+		- Numero di posti letto/terapia intensiva
+		- Previsioni statistiche
+		- Numero di aeroporti e simili...
+		- <AGGIUNGERE ROBA>
+	6) Creazione del modello E/R sul nuovo schema creato
+		<Lo fa Pasquale che e piu bravo su ste cose io facc schif>
+	7) QUERY
+		-...
+	8) GRAFICA
+		<qui dobbiamo mostrare i dati raccolti dalle query attraverso dei software come excel
+		o ad esempio creare un WEB APP, aspetto tue notizie per una scelta>
+		POSSIBILIA:
+			-Excel
+			-Web APP
+			-Pygame
+			-...
+	9) Stored Procedure e Trigger
+	10) Viste e indici
+		
