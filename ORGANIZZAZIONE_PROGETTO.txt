@@ -2,7 +2,7 @@ Qui suddivido il progetto in piccoli problemi da risolvere passo passo, quindi l
 Il progetto si suddivide in:
 
 	1) Raccolta Dati
-	2) Pulizia dei dati
+	2) Pulizia dei dati in CSV(comma separated values)
 		- Delete delle righe non significative
 		- Rendere in formato leggibile le date ad es (GG-mese-AAAA)
 			* mese: tre iniziali del mese in inglese per oracle
