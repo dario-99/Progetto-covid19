@@ -1,0 +1,68 @@
+
+
+
+
+
+	La Cartella In Cui E' Contenuto Tale File Contiene:
+
+		Due Script, "SQL_CreateTable.py" E "SQL_Insert.py",
+		Il Primo Utile A Creare Una Stringa Di Comando SQL Di Create Table,
+		Il Secondo Utile A Creare Una Stringa Di Comando SQL Di Insert, Ossia Di Inserimento In Tabella Di Dati,
+			Tali Dati Vengono Letti All'Interno Dello Script Stesso Da Un File CSV Contenuto Nella Cartella "INPUT_CSV";
+		Entrambi Gli Script Hanno Una Funzione Di Esecuzione Dello Script Stesso Avviabile O Esternamente O De-Commentando La Sua Chiamata,
+		Tali Funzioni Hanno Come Valore Di Ritorno La Stringa Di Comando Sql Creata,
+		Infine, Mediante Parametro Booleano Di Ingresso, Si Può Scegliere Se Far Scrivere Tale Stringa Anche Su Un File
+		Contenuto Nella Cartella "OUTPUT_TEXT" E Di Nome Specificato Come Paramtero Di Ingresso;
+		
+		Entrambi Gli Script "SQL_CreateTable.py" E "SQL_Insert.py" Hanno Come Parametri Di Ingresso Tutti E Soli Quelli Contenuti
+		Nell'Apposito Script "INPUT.py";
+
+		Infine Un Ulteriore Script "CSV_SQL.py" Permette Di Utilizzare I Due Script Di Generazione Delle Stringhe Al Fine Di Creare Una Tabella E Inserirvi I Dati,
+		Dopo Aver Effettuato Una Connessione Ad Un Database, I Dati Relativi Alla Connessione Sono Contenuti Nello Script Stesso.
+
+
+
+	Parametri Del File "INPUT.py"
+
+
+		NOME_FILE_OUTPUT_CREATE
+			Nome Del File Su Cui Eventualmente Scrivere La Stringa Generata Dallo Script "SQL_CreateTable.py" 
+
+		RIMPIAZZA_TABELLA
+			Valore Booleano Per Indicare Se Nella Stringa Di Comando Di Creazione Della Tabella Deve Essere Specificato
+			Il Rimpiazzo Della Tabella ( " CREATE OR REPLACE TABLE " )
+
+		NOME_FILE_OUTPUT_INSERT
+			Nome Del File Su Cui Eventualmente Scrivere La Stringa Generata Dallo Script "SQL_Insert.py" 
+
+		NOME_FILE_CSV
+			Nome Del File CSV Da Cui Lo Script "SQL_Insert.py" Deve Leggere I Dati
+
+		NOMI_CAMPI
+			Valore Booleano Per Indicare Se Nella Stringa Di Comando Di Inserimento Nella Tabella Devono Essere Specificati
+			I Nomi Dei Campi All'Interno Dei Molteplici Comandi Di Insert ( " INSERT INTO <TABLE> (<FIELDS>) VALUES (<VALUES>); " )
+
+		CHIAVE_AGGIUNTIVA
+			Valore Booleano Per Indicare Se Nella Stringa Di Comando Di Creazione Della Tabella Deve Essere Aggiunto
+			Un Campo Iniziale Che Faccia Da Chiave Primaria,
+			Anche Le Funzioni Di Inserimento Devonono Tenere Considerazione Di Tale Parametro
+
+		NOME_CHIAVE_AGGIUNTIVA
+			Nome Del Campo Aggiuntivo Nel Caso La Sua Creazione Sia Abilitata ( " CHIAVE_AGGIUNTIVA = True " )	
+
+		PREFISSO_DATABASE
+			Nome Da Anteporre Al Nome Della Tabella Sia Nel Comando Di Creazione Che Nei Comandi Di Inserimento,
+			Se Tale Variabile Assume Valore Stringa Vuota ( PREFISSO_DATABASE = "" ) Allora Il Nome Della Tabella Resta Quello Originale,
+			Altrimenti Il Nome Della Tabella Si Modica Avendo Come Prefisso Tale Variabile Unita Al Punto ( Dot Notation )
+
+		NOME_TABELLA
+			Nome Della Tabella Da Creare E In Cui Si Vogliono Inserire I Dati
+
+		COLONNE
+			Lista Ordinata Di Coppie Di Stringhe, Dove Ogni Coppia Ha
+			Come Primo Valore Il Nome Del Campo Della Tabela Da Creare E In Cui Fare Inserimenti
+			E Come Secondo Valore Il Tipo Del Campo Associato Al Nome
+
+
+
+

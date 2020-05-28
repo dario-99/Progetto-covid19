@@ -1,0 +1,9 @@
+
+
+
+
+
+	https://datatofish.com/import-csv-sql-server-python/
+
+
+	https://stackoverflow.com/questions/51633002/how-to-use-mysql-from-xampp-for-python-3
