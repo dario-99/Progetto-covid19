@@ -11,8 +11,8 @@ AGGIUNTE:
 -MISURE_PROVINCE:
 	+denista_abitativa	DONE
 -REGIONI:
-	+
-	+
+	+all_bed_capacity
+	+icu_bed_capacity
 	
 ---------------------------	--------------------------- --------------------------- --------------------------- ---------------------------
 NUOVE TABELLE:
