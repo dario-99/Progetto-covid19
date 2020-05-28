@@ -9,7 +9,7 @@ c.	PROVINCE(codice_provincia, denominazione_provincia, sigla_provincia, latitudi
 
 AGGIUNTE:
 -MISURE_PROVINCE:
-	+denista_abitativa
+	+denista_abitativa	DONE
 -REGIONI:
 	+
 	+
