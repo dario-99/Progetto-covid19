@@ -1,0 +1,5 @@
+NORMALIZZAZIONE
+a.	MISURE_PROVINCE(data, codice_provincia:PROVINCE, totale_casi , note_it,   note_en)
+b.	REGIONI(codice_regione,denominazione_regione, Stato)
+c.	PROVINCE(codice_provincia, denominazione_provincia, sigla_provincia, latitudine , longitudine , codice_regione:REGIONI)
+

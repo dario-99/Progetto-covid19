@@ -1,0 +1,22 @@
+ALTER TABLE
+qui espongo le aggiunte possibili ssulle ingole tabelle e l'aggiunta eventuale di nuove tabelle
+
+dopo la NORMALIZZAZIONE mi aspetto questa struttura.
+
+a.	MISURE_PROVINCE(data, codice_provincia:PROVINCE, totale_casi , note_it,   note_en)
+b.	REGIONI(codice_regione,denominazione_regione, Stato) 
+c.	PROVINCE(codice_provincia, denominazione_provincia, sigla_provincia, latitudine , longitudine , codice_regione:REGIONI)
+
+AGGIUNTE:
+-MISURE_PROVINCE:
+	+denista_abitativa
+-REGIONI:
+	+
+	+
+	
+---------------------------	--------------------------- --------------------------- --------------------------- ---------------------------
+NUOVE TABELLE:
+	MISURE_REGIONI(data,codice_regione:REGIONI,ricoverati_con_sintomi,terapia_intensiva,totale_ospedalizzati,isolamento_domiciliare,totale_positivi,variazione_totale_positivi,nuovi_positivi,dimessi_guariti,deceduti,totale_casi,tamponi,casi_testati,note_it,note_en)
+	
+	#devo vedere ancora i vincoli di primary key etc. mi sto soffermando sui dati, probabilmente necessita di un altra normalizzazione
+
