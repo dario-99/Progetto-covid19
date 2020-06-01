@@ -1,0 +1,8 @@
+
+
+
+
+
+	La Cartella In Cui E' Contenuto Tale File Contiene
+	Uno Scrip Utile Ad Anteporre Il Nome Del DataBase Davanti Alle Occorrenze Del Nome Della Tabella,
+	Tale Script Fa Uso Di Un Insieme Di Funzioni "Di Libreria" Che Operano Sulle Stringhe.

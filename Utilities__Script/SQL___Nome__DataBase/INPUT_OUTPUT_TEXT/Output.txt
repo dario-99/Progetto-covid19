@@ -1,0 +1,3 @@
+
+select DATA
+from COVID.COVID.master_table_province
