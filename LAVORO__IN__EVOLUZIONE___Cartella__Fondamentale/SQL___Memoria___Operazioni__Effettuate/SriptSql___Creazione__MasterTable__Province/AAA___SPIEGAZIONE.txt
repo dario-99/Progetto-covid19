@@ -1,0 +1,7 @@
+
+
+
+
+	La Cartella In Cui E' Contenuto Tale File Contiene
+	ESATTAMENTE I Comandi Sql Sottoposti Al DBMS Oracle 
+	Per La Creazione Della Tabella Principale Delle Province Estratta Dal File CSV.
